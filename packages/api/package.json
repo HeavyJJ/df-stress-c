@@ -1,0 +1,6 @@
+{
+  "name": "@df/api",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": { "@df/core": "1.0.0" }
+}
