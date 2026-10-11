@@ -1,0 +1,19 @@
+{
+  "name": "df-stress-c",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Subscription billing monorepo (Draft Fixer stress test C).",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "tsx --test packages/core/test/dates.test.ts packages/api/test/billing.test.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "@types/node": "22.7.5"
+  }
+}
