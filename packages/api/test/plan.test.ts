@@ -9,3 +9,7 @@ test("an older installed version needs an upgrade", () => {
 test("an up-to-date version does not need an upgrade", () => {
   assert.equal(needsUpgrade("2.0.0", "1.5.0"), false);
 });
+
+test("an exact minimum version does not need an upgrade", () => {
+  assert.equal(needsUpgrade("1.5.0", "1.5.0"), false);
+});
