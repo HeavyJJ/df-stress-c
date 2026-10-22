@@ -9,6 +9,7 @@ test("a plan active for the whole of March is billed the full monthly price", ()
 test("a one-day trial on the last day of March bills a single day", () => {
   // Both ends count, so 2026-03-31..2026-03-31 is one billable day.
   assert.equal(firstInvoice(3100, "2026-03-31", "2026-03-31").cents, 100);
+  assert.equal(firstInvoice(3100, "2026-03-31", "2026-03-31").label, "2026-03-31..2026-03-31");
 });
 
 test("the first half of April is half the monthly price", () => {
