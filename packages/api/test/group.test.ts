@@ -8,4 +8,9 @@ test("totals charges per account", () => {
     { account: "b", cents: 50 },
     { account: "a", cents: 25 },
   ]), { a: 125, b: 50 });
+  assert.deepEqual(totalsByAccount([
+    { account: "a", cents: 1 },
+    { account: "a", cents: 2 },
+    { account: "b", cents: 3 },
+  ]), { a: 3, b: 3 });
 });
