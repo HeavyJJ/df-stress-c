@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "tsx --test packages/core/test/dates.test.ts packages/api/test/billing.test.ts packages/api/test/flaky.test.ts",
+    "test": "tsx --test packages/core/test/dates.test.ts packages/api/test/billing.test.ts packages/api/test/group.test.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "devDependencies": {
